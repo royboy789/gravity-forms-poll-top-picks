@@ -13,11 +13,13 @@ function GFTop($atts){
 	extract( shortcode_atts( array(
 		'total' => '5',
 		'formid' => '1',
+		'poll_input' => '1'
 	), $atts ) );
 
+	$poll_input = $poll_input-1;
 	$MyResults = new GFPolls();
 	$summary = $MyResults->gpoll_get_results($formid);
-	$entries = $summary['fields']['0']['inputs'];
+	$entries = $summary['fields'][$poll_input]['inputs'];
 	
 	$UnSortedResults = array();
 	foreach($entries as $entry){
