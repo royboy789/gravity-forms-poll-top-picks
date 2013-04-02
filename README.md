@@ -15,13 +15,13 @@ To Install:
 
 To Use:
 -------
-Shortcode **[gftop]**
+Shortcode `[gftop]`
 
 Attributes:
 -----------
-* **total** - how many do you want to show?
-* **formid** - which form do you want to use (mus be a poll)?
+* `total` - how many do you want to show?
+* `formid` - which form do you want to use (mus be a poll)?
 
 Example:
 --------
-[gftop total="5" formid="2"] - will pull the top 5 results from form 2
+`[gftop total="5" formid="2"]` - will pull the top 5 results from form 2
