@@ -21,7 +21,8 @@ Attributes:
 -----------
 * `total` - how many do you want to show?
 * `formid` - which form do you want to use (mus be a poll)?
+* `poll_input` - which poll input do you want to get the top X of? First poll input defaults as 1
 
 Example:
 --------
-`[gftop total="5" formid="2"]` - will pull the top 5 results from form 2
+`[gftop total="5" poll_input="2" formid="2"]` - will pull the top 5 results from the second poll input in form 2
